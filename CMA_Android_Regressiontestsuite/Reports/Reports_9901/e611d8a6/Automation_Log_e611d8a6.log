@@ -1,0 +1,41 @@
+2013-11-06 22:55:23 - JDK found on PATH.
+2013-11-06 22:55:23 - Android SDK found at: /Users/ahossain/Desktop/adt-bundle-mac-x86_64-20130917/sdk
+No test server found for this combination of app and calabash version. Recreating test server.
+2013-11-06 22:55:23 - "/usr/bin/keytool" -v -printcert -file "/var/folders/0l/cxlz3yh563x14rykgmhzrk_02dlpgw/T/d20131106-2205-1hkfog5/META-INF/ANDROIDD.RSA"
+2013-11-06 22:55:23 - MD5 fingerprint for signing cert (/Users/ahossain/Desktop/github/RegressionTestSuites/CMA_Android_Regressiontestsuite/9901.apk): 30:D6:6F:92:03:F2:95:59:EC:54:02:48:E8:3B:D2:6B
+2013-11-06 22:55:23 - /Users/ahossain/Desktop/github/RegressionTestSuites/CMA_Android_Regressiontestsuite/9901.apk was signed with a certificate with fingerprint 30:D6:6F:92:03:F2:95:59:EC:54:02:48:E8:3B:D2:6B
+2013-11-06 22:55:23 - "/usr/bin/keytool" -list -v -alias androiddebugkey -keystore /Users/ahossain/.android/debug.keystore -storepass android
+2013-11-06 22:55:23 - Key store data:
+2013-11-06 22:55:23 - Alias name: androiddebugkey
+Creation date: Nov 6, 2013
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Android Debug, O=Android, C=US
+Issuer: CN=Android Debug, O=Android, C=US
+Serial number: 527b3220
+Valid from: Wed Nov 06 22:24:32 PST 2013 until: Sun Mar 24 23:24:32 PDT 2041
+Certificate fingerprints:
+	 MD5:  30:D6:6F:92:03:F2:95:59:EC:54:02:48:E8:3B:D2:6B
+	 SHA1: 78:31:E8:A0:CD:30:F7:44:8C:F9:90:3F:D7:73:99:BD:81:8E:F0:18
+	 Signature algorithm name: SHA1withRSA
+	 Version: 3
+2013-11-06 22:55:23 - Unlocked keystore at /Users/ahossain/.android/debug.keystore - fingerprint: 30:D6:6F:92:03:F2:95:59:EC:54:02:48:E8:3B:D2:6B
+2013-11-06 22:55:23 - Trying to read keystore from: /Users/ahossain/Desktop/github/RegressionTestSuites/CMA_Android_Regressiontestsuite/debug.keystore - no such file
+2013-11-06 22:55:23 - Trying to read keystore from: /Users/ahossain/.local/share/Xamarin/Mono for Android/debug.keystore - no such file
+2013-11-06 22:55:23 - Trying to read keystore from: /Users/ahossain/AppData/Local/Xamarin/Mono for Android/debug.keystore - no such file
+2013-11-06 22:55:28 - "/usr/bin/jarsigner" -sigalg MD5withRSA -digestalg SHA1 -signedjar test_servers/f1cc7a6f5c1183728bc375fa679c7ecd_0.4.14.apk -storepass android -keystore /Users/ahossain/.android/debug.keystore /var/folders/0l/cxlz3yh563x14rykgmhzrk_02dlpgw/T/d20131106-2205-1fstygw/TestServer.apk androiddebugkey
+Done signing the test server. Moved it to test_servers/f1cc7a6f5c1183728bc375fa679c7ecd_0.4.14.apk
+2013-11-06 22:55:32 - /Users/ahossain/.rvm/rubies/ruby-2.0.0-p247/bin/ruby -S cucumber -v ADB_DEVICE_ARG=e611d8a6 --tags @9901 --format html --out /Users/ahossain/Desktop/github/RegressionTestSuites/CMA_Android_Regressiontestsuite/Reports/Reports_9901/e611d8a6/Automation_Report_e611d8a6.html MAIN_ACTIVITY=com.banking.activities.SplashActivity APP_PATH="/Users/ahossain/Desktop/github/RegressionTestSuites/CMA_Android_Regressiontestsuite/9901.apk" TEST_APP_PATH="test_servers/f1cc7a6f5c1183728bc375fa679c7ecd_0.4.14.apk"
+Code:
+  * features/support/env.rb
+  * features/support/app_installation_hooks.rb
+  * features/support/app_life_cycle_hooks.rb
+  * features/support/hooks.rb
+  * features/step_definitions/AndroidRegressionTestSuite_Main.rb
+  * features/step_definitions/AndroidRegressionTestSuite_Resuable.rb
+  * features/step_definitions/calabash_steps.rb
+
+Features:
+Parsing feature files took 0m0.015s
+

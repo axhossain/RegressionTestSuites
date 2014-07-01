@@ -1,0 +1,50 @@
+wait_for_elements_exist(["* marked:'0 Balance Acct'"], :timeout => 60)
+quit
+start_test_server_in_background
+query("textview",:text)
+performAction('wait_for_text', "min due 35.00", 10)
+wait_for_elements_exist(["* marked:'min due 35.00'"], :timeout => 10)
+wait_for_elements_exist(["* marked:'min due 35.00 of 258.52'"], :timeout => 10)
+wait_for_elements_exist(["* marked:'min due $35.00 of $258.52'"], :timeout => 10)
+wait_for_elements_exist(["* marked:'min due $35.00 of $258.52'"], :timeout => 10)
+wait_for_elements_exist(["* marked:'min due $35.00 of $258.521'"], :timeout => 10)
+quit
+start_test_server_in_background
+query("textview",:text)
+wait_for_elements_exist(["* marked:'-$1,500.00'"], :timeout => 10)
+wait_for_elements_exist(["* marked:'$1,500.00'"], :timeout => 10)
+quit
+start_test_server_in_background
+query("textview":,text)
+query("textview",:text)
+wait_for_elements_exist(["* marked:'Credit Card'"], :timeout => 10)
+wait_for_elements_exist(["* marked:'Credit Card '"], :timeout => 10)
+wait_for_elements_exist(["* marked:'-$200.00'"], :timeout => 10)
+quit
+start_test_server_in_background
+query("textview",:text)
+quit
+start_test_server_in_background
+query("textview",:text)
+performAction('wait_for_text',"All Special Characters: ~`!@\#$%^&*()-_=+[]{}|\\;:<'>,.?/0123456789", 10)
+performAction('assert_text',"All Special Characters: ~`!@\#$%^&*()-_=+[]{}|\\;:<'>,.?/0123456789", true)
+quit
+start_test_server_in_background
+query("textview",:text)
+wait_for_elements_exist(["* marked:'All Special Characters: ~`!@\#$%^&*()-_=+[]{}|\\;:<'>,.?/0123456789'"], :timeout => 10)
+wait_for_elements_exist(["* marked:'All Special Characters: ~`!@\#$%^&*()-_=+[]{}|\\;:<'>,.?/0123456789'"], :timeout => 10)
+quit
+start_test_server_in_background
+query("textview",:text)
+performAction('wait_for_text', "Host nickname Savings", 10)
+performAction('wait_for_text', "No nickname", 10)
+performAction('wait_for_text', "Test nickname", 10)
+performAction('assert_text', "Test nickname", true)
+performAction('assert_text', "No nickname", true)
+quit
+start_test_server_in_background
+query("textview",:text)
+check_element_exists("textview marked:'All Special Characters: ~`!@\#$%^&*()-_=+[]{}|\\;:<'>,.?/0123456789'")
+check_element_exists("textview marked:'All Special Characters::'")
+check_element_exists("textview marked:'All Special Characters:'")
+quit

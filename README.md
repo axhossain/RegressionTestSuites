@@ -1,4 +1,2 @@
 RegressionTestSuites
 ====================
-
-RegressionTestSuites for testing

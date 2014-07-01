@@ -1,0 +1,12 @@
+version: 1.5.3.2c5f176a94
+apkFileName: 2a784a87930efdc90b93d9aab65f6d13_0.4.14.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '4'
+packageInfo:
+  orig_package: com.ifs.mobilebanking.fiid9901.test
+  cur_package: android
+compressionType: false
